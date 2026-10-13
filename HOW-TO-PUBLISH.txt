@@ -1,0 +1,41 @@
+PUT VOLUME BRUSH ON YOUR OWN FREE WEBSITE (GitHub Pages) - then use it on the iPad
+=================================================================================
+
+One time setup (about 5 minutes, no coding):
+
+1. Go to https://github.com and create a free account (remember your user name).
+
+2. Click "+" (top right) -> "New repository".
+   - Repository name:  volume-brush
+   - Choose "Public"   (free websites need a public repository: people who know the
+     link could open the tool, but your drawings always stay on your own device)
+   - Click "Create repository".
+
+3. On the new page click the link "uploading an existing file"
+   (or later: "Add file" -> "Upload files").
+   Open this "website" folder on your PC, select EVERYTHING INSIDE it
+   (index.html, manifest.webmanifest, the .png icons, .nojekyll) and drag it
+   into the browser window. Then click "Commit changes".
+   Tip: ".nojekyll" is a hidden file - in Explorer use View -> Show -> Hidden items.
+   (If it is missing, the site still works.)
+
+4. In the repository click "Settings" -> "Pages" (left side).
+   Source: "Deploy from a branch".  Branch: "main"  and folder "/ (root)".  Click "Save".
+
+5. Wait 1-2 minutes. Your tool is now online at:
+       https://YOUR-USER-NAME.github.io/volume-brush/
+
+On the iPad:
+6. Open that address in Safari.
+7. Tap Share (square with arrow) -> "Add to Home Screen" -> Add.
+   Now Volume Brush opens from the Home Screen in full screen, like an app.
+   The iPad needs internet (3D engine and fonts load from the internet).
+
+Updating later:
+- After a change on the PC, run build.ps1, then on github.com open the repository,
+  "Add file" -> "Upload files", drop the new index.html and commit.
+  The website updates within a minute or two (reload the page on the iPad).
+
+Using it: Apple Pencil paints with pressure, 1 finger moves the sheet,
+2 fingers zoom, 2-finger tap = undo, 3-finger tap = redo.
+Exports open the share sheet -> "Save to Files" or "Save Image".
